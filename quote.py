@@ -6,8 +6,6 @@ def latex(s):
             .replace('$', '\$')
             .replace('#', '\#')
             .replace('_', '\_')
-            .replace('{', '\{')
-            .replace('}', '\}')
             .replace('~', '\\textasciitilde')
             .replace('^', '\\textasciicircum'))
 

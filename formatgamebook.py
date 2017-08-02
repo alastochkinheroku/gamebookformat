@@ -127,7 +127,7 @@ def parse_file_to_book(inputfile, output_format_tag, book):
             config = line.split('=')
             book.configure(config[0].strip(), config[1].strip())
         elif name:
-            text = text + " " + line.strip()
+            text = text + "\n" + line.strip()
         elif len(line.strip()):
             raise Exception("unknown content before sections: %s"
                             % line.strip())
