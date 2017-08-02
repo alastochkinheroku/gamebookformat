@@ -1,8 +1,7 @@
 #FIXME entire file is a hack
 
 def latex(s):
-    return (s.replace('\\', '\\textbackslash')
-            .replace('&', '\&')
+    return (s.replace('&', '\&')
             .replace('%', '\%')
             .replace('$', '\$')
             .replace('#', '\#')
