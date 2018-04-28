@@ -12,7 +12,8 @@ def latex(s):
 def rtf(s):
     return (s.replace('\\', '\\\\')
             .replace('{', '\\{')
-            .replace('}', '\\}'))
+            .replace('}', '\\}')
+            .replace('\n', '\par\n'))
 
 import cgi
 
